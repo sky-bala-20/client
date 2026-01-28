@@ -42,7 +42,7 @@ const AllUsers = () => {
   return (
     <div className="all-users-container">
       <h1>All Candidates</h1>
-      {loading && <p className="loading">loading...</p>}
+      {loading && <p className="loading">Preparing user list…</p>}
       {error && <p className="error">{error}</p>}
       {!loading && !error && (
         <>
