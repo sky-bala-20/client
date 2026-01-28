@@ -12,7 +12,7 @@ const UserDetails = () => {
   const { id } = useParams()
 
   useEffect(() => {
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+    const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
     axios.get(`${API_URL}/api/user/${id}`)
       .then(response => {
         setUser(response.data)
@@ -26,7 +26,7 @@ const UserDetails = () => {
   }, [id])
 
   const handleDelete = async () => {
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+    const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
     try {
       await axios.delete(`${API_URL}/api/delete/${id}`)
       navigate('/')

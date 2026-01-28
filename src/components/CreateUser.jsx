@@ -14,7 +14,7 @@ const CreateUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+    const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
     try {
       await axios.post(`${API_URL}/api/create`, { name, email, age })
       setMessage("User created successfully")

@@ -10,7 +10,7 @@ const AllUsers = () => {
   const [error, setError] = useState("")
 
   useEffect(() => {
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+    const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
     axios.get(`${API_URL}/api/users`)
       .then((response) => {
         setUsers(response.data)

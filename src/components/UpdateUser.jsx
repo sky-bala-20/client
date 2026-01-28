@@ -14,7 +14,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+      const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
       try {
         const response = await axios.get(`${API_URL}/api/user/${id}`)
         setName(response.data.name)
@@ -30,7 +30,7 @@ const UpdateUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+    const API_URL = import.meta.env.VITE_API_URL || 'https://my-user-backend.onrender.com'
     try {
       await axios.put(`${API_URL}/api/edit/${id}`, { name, email, age })
       setMessage("User updated successfully...")
