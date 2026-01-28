@@ -1,0 +1,89 @@
+/* Form.css - Styles for forms in CreateUser and UpdateUser components */
+
+/* Form container - Always centered */
+.form-container {
+  max-width: 400px;
+  margin: 20px auto; /* Keeps it centered horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+
+
+/* Labels */
+.form-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+.form-container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.form-container form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+.form-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container form button:hover {
+  background-color: #0056b3;
+}
+
+/* Success message */
+.form-container .message.success {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Error message */
+.form-container .message.error {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive for mobile - Maintains centering */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+    margin: 20px auto; /* Keeps auto margin for centering, reduced padding for space */
+    max-width: 90%; /* Allows it to scale slightly on very small screens */
+  }
+}

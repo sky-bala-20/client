@@ -1,0 +1,46 @@
+/* ErrorPage.css - Styles for the ErrorPage component */
+
+/* Container for the error page */
+.error-page-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Heading styles */
+.error-page-container h1 {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+.error-page-container p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Link styles */
+.error-page-container a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.error-page-container a:hover {
+  color: #0056b3;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .error-page-container {
+    margin-top: 20px;
+    padding: 15px;
+  }
+}

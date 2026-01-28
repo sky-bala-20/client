@@ -1,0 +1,62 @@
+/* AllUsers.css - Styles for the AllUsers component */
+
+/* Container for the component */
+.all-users-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading styles */
+.all-users-container h1 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Loading and error messages */
+.loading, .error, .no-users {
+  font-size: 1.2em;
+  color: #666;
+  margin: 20px 0;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* User list styles */
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.user-list li:hover {
+  background-color: #e9ecef;
+}
+
+/* Link styles within list */
+.user-list a {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.user-list a:hover {
+  color: #0056b3;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .all-users-container {
+    padding: 10px;
+  }
+  .user-list li {
+    padding: 8px;
+  }
+}

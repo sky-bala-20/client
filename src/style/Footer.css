@@ -1,0 +1,111 @@
+/* Footer.css - Styles for the Footer component */
+
+/* Main footer container */
+.footer-container {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: auto; /* Pushes footer to bottom if using flex in App */
+  text-align: center;
+}
+
+/* Content wrapper for sections */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Each section (social, user info, links) */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+/* Section titles */
+.footer-title {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Individual social links */
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #e9ecef;
+}
+
+/* Social icons (from React Icons) */
+.social-icon {
+  font-size: 1.5em;
+}
+
+/* Username display (updated for "Sky") */
+.footer-username {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 500; /* Slight emphasis */
+}
+
+/* Links list */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+/* Individual footer links */
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #e9ecef;
+}
+
+/* Bottom section for copyright */
+.footer-bottom {
+  border-top: 1px solid #0056b3;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .footer-section {
+    margin: 15px 0;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
