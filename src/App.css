@@ -1,25 +1,18 @@
-/* app.css - Styles for the main App component */
-
-/* Main app container */
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0f4f8; /* Matches body background for consistency */
+  padding: 0;
 }
 
-/* Ensure content takes up available space */
-.app-content {
+.app-container > * {
   flex: 1;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   .app-container {
-    padding: 10px;
+    padding: 0 1rem;
   }
 }
