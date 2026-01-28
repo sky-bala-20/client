@@ -6,6 +6,9 @@
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Sticky navbar for better usability */
+  top: 0;
+  z-index: 1000; /* Ensure it stays above content */
 }
 
 .navbar-brand h1 {
@@ -47,12 +50,23 @@
   top: 100%;
   right: 0;
   background-color: #2980b9;
-  width: 200px;
+  width: 250px; /* Slightly wider for better touch */
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Above navbar */
+}
+
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 .dropdown-menu a {
@@ -72,11 +86,21 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Less padding on mobile */
+  }
+
   .navbar-links {
     display: none;
   }
 
   .hamburger {
     display: block;
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Full width on mobile for easier access */
+    right: 0;
+    left: 0;
   }
 }

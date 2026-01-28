@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa'; // Hamburger icon (three dots/lines)
+import { FaBars, FaTimes } from 'react-icons/fa'; // Added FaTimes for close icon
 import '../style/Navbar.css';
 
 const Navbar = () => {
@@ -8,6 +8,10 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -24,8 +28,11 @@ const Navbar = () => {
       </button>
       {isMenuOpen && (
         <div className="dropdown-menu">
-          <Link to='/' onClick={toggleMenu}>All Users</Link>
-          <Link to='/create-user' onClick={toggleMenu}>Create a new User</Link>
+          <button className="close-menu" onClick={closeMenu} aria-label="Close menu">
+            <FaTimes />
+          </button>
+          <Link to='/' onClick={closeMenu}>All Users</Link>
+          <Link to='/create-user' onClick={closeMenu}>Create a new User</Link>
         </div>
       )}
     </div>
