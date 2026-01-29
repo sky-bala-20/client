@@ -1,82 +1,116 @@
+/* Footer.css - Styles for the Footer component */
+
+/* Main footer container */
 .footer-container {
-  background-color: #2c3e50; /* Dark blue background */
-  color: white;
-  padding: 2rem 0;
-  margin-top: auto;
+  background-color: #2c3e50; /* Dark blue-gray for a modern, professional look */
+  color: #fff;
+  padding: 20px 0;
+  margin-top: auto; /* Pushes footer to bottom if using flex in App */
+  text-align: center;
 }
 
+/* Content wrapper for sections */
 .footer-content {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
+/* Each section (social, user info, links) */
 .footer-section {
   flex: 1;
   min-width: 200px;
-  margin-bottom: 1rem;
+  margin: 10px;
 }
 
+/* Section titles */
 .footer-title {
-  margin-bottom: 1rem;
-  color: #ecf0f1;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ecf0f1; /* Light gray for subtle contrast */
 }
 
+/* Social icons container */
 .social-icons {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 15px;
 }
 
+/* Individual social links */
 .social-link {
-  color: white;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .social-link:hover {
-  color: #3498db;
+  color: #3498db; /* Lighter blue for hover accent */
 }
 
+/* Social icons (from React Icons) */
+.social-icon {
+  font-size: 1.5em;
+}
+
+/* Username display */
 .footer-username {
-  color: #bdc3c7;
+  font-size: 1em;
+  margin: 0;
+  font-weight: 500;
+  color: #bdc3c7; /* Muted gray for secondary text */
 }
 
+/* Links list */
 .footer-links {
   list-style: none;
   padding: 0;
 }
 
 .footer-links li {
-  margin-bottom: 0.5rem;
+  margin: 5px 0;
 }
 
+/* Individual footer links */
 .footer-link {
-  color: #bdc3c7;
-  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-link:hover {
-  color: white;
+  color: #3498db; /* Matching hover color */
 }
 
+/* Bottom section for copyright */
 .footer-bottom {
-  text-align: center;
-  padding: 1rem 0;
-  border-top: 1px solid #34495e;
-  margin-top: 1rem;
+  border-top: 1px solid #34495e; /* Darker border for separation */
+  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .footer-copyright {
-  color: #95a5a6;
+  margin: 0;
+  font-size: 0.9em;
+  color: #bdc3c7; /* Consistent muted color */
 }
 
-/* Responsive */
+/* Responsive for mobile */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    text-align: center;
+    padding: 0 10px;
+  }
+  .footer-section {
+    margin: 15px 0;
+    text-align: center; /* Ensures section content is centered */
+  }
+  .social-icons {
+    justify-content: center; /* Explicitly center social icons */
+    margin: 0 auto; /* Additional centering if needed */
   }
 }

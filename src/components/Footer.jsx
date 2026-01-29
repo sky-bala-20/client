@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3 className="footer-title">User Info</h3>
-          <p className="footer-username">Logged in as: Sky</p> {/* Updated username */}
+          <p className="footer-username">Logged in as: Sky</p>
         </div>
         <div className="footer-section">
           <h3 className="footer-title">Quick Links</h3>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p className="footer-copyright">&copy; 2023 Your Company Name. All rights reserved.</p>
+        <p className="footer-copyright">© Copyright 2026. All rights reserved. <br></br>Made by SKY</p>
       </div>
     </footer>
   );
