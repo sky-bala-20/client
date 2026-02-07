@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f0f4f8; /* Matches body background for consistency */
+  background-color: #f0f4f8;
   padding: 0;
 }
 
@@ -10,7 +10,6 @@
   flex: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .app-container {
     padding: 0 1rem;

@@ -49,18 +49,17 @@
   color: #721c24;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .form-container {
-    max-width: 90%; /* Reduces width to 90% of screen for smaller devices, keeping it centered */
-    margin: 1rem auto; /* Maintains centering with reduced margins */
-    padding: 1rem; /* Slightly less padding for mobile */
+    max-width: 90%; 
+    margin: 1rem auto; 
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .form-container {
-    max-width: 95%; /* Even smaller on very small screens */
-    padding: 0.75rem; /* Minimal padding */
+    max-width: 95%;
+    padding: 0.75rem;
   }
 }

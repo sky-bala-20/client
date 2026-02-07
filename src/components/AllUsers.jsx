@@ -28,7 +28,6 @@ const AllUsers = () => {
       })
   }, [])
 
-  // Function to chunk users into groups of 5 for slides
   const chunkUsers = (arr, size) => {
     const chunks = []
     for (let i = 0; i < arr.length; i += size) {

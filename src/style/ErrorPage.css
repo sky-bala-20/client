@@ -5,15 +5,15 @@
   justify-content: center;
   min-height: 60vh;
   padding: 2rem;
-  background-color: #ffffff; /* White background */
-  border-radius: 12px; /* Rounded */
+  background-color: #ffffff; 
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
   max-width: 600px;
 }
 
 .error-page-container h1 {
-  color: #e74c3c; /* Red for error emphasis */
+  color: #e74c3c; 
   margin-bottom: 1rem;
 }
 
@@ -35,7 +35,7 @@
   background-color: #2980b9;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .error-page-container {
     margin: 1rem;

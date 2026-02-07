@@ -2,8 +2,8 @@
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #ffffff; /* White background for contrast */
-  border-radius: 12px; /* Rounded corners for cuteness */
+  background-color: #ffffff; 
+  border-radius: 12px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -23,8 +23,8 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: #ecf0f1; /* Light gray for slide background */
-  border-radius: 10px; /* Rounded slides */
+  background-color: #ecf0f1; 
+  border-radius: 10px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,21 +32,21 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for up to 5 items per slide */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 1rem;
   width: 100%;
 }
 
 .user-item {
   padding: 1rem;
-  background-color: #ffffff; /* White for each user item */
-  border-radius: 8px; /* Rounded for cuteness */
+  background-color: #ffffff; 
+  border-radius: 8px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .user-item:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -63,10 +63,9 @@
   font-style: italic;
 }
 
-/* Swiper Navigation and Pagination Customization */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #3498db; /* Blue arrows */
+  color: #3498db; 
   background: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   width: 40px;
@@ -74,7 +73,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #3498db; /* Active pagination dot */
+  background-color: #3498db; 
 }
 
 /* Responsive */
@@ -85,6 +84,6 @@
   }
 
   .user-list {
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr; 
   }
 }

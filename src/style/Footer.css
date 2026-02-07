@@ -96,10 +96,10 @@
 .footer-copyright {
   margin: 0;
   font-size: 0.9em;
-  color: #bdc3c7; /* Consistent muted color */
+  color: #bdc3c7; 
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -107,10 +107,10 @@
   }
   .footer-section {
     margin: 15px 0;
-    text-align: center; /* Ensures section content is centered */
+    text-align: center; 
   }
   .social-icons {
-    justify-content: center; /* Explicitly center social icons */
-    margin: 0 auto; /* Additional centering if needed */
+    justify-content: center;
+    margin: 0 auto; 
   }
 }

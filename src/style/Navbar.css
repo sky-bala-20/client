@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3498db; /* Blue background */
+  background-color: #3498db; 
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Sticky navbar for better usability */
+  position: sticky; 
   top: 0;
-  z-index: 1000; /* Ensure it stays above content */
+  z-index: 1000; 
 }
 
 .navbar-brand h1 {
@@ -24,16 +24,16 @@
 .navbar-links a {
   color: white;
   font-weight: bold;
-  background-color: #5dade2; /* Light blue background for button-like appearance */
+  background-color: #5dade2; 
   padding: 0.5rem 1rem;
-  border-radius: 12px; /* Rounded for cuteness */
-  border: 2px solid #3498db; /* Subtle border matching navbar */
+  border-radius: 12px; 
+  border: 2px solid #3498db; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  background-color: #2980b9; /* Darker blue on hover for color change */
-  color: #ecf0f1; /* Slightly lighter text for contrast */
+  background-color: #2980b9; 
+  color: #ecf0f1; 
 }
 
 .hamburger {
@@ -50,15 +50,14 @@
   top: 100%;
   right: 0;
   background-color: #2980b9;
-  width: 250px; /* Slightly wider for better touch */
+  width: 250px; 
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1001; /* Above navbar */
+  z-index: 1001; 
 }
-
 .close-menu {
   align-self: flex-end;
   background: none;
@@ -73,21 +72,20 @@
   color: white;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  border-radius: 10px; /* Rounded for consistency */
-  background-color: #5dade2; /* Light blue background */
-  border: 1px solid #3498db; /* Subtle border */
+  border-radius: 10px; 
+  background-color: #5dade2; 
+  border: 1px solid #3498db; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-  background-color: #1f5f99; /* Darker blue on hover */
+  background-color: #1f5f99; 
   color: #ecf0f1;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem; /* Less padding on mobile */
+    padding: 1rem;
   }
 
   .navbar-links {
@@ -99,7 +97,7 @@
   }
 
   .dropdown-menu {
-    width: 100%; /* Full width on mobile for easier access */
+    width: 100%;
     right: 0;
     left: 0;
   }
